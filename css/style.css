@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* Variavies para as Fonts */
-
+html {
+    scroll-behavior: smooth;
+}
 :root {
     --font-menu: "Poppins", sans-serif;
     --texto: "Inter", sans-serif;
@@ -89,6 +91,7 @@ body {
     /* cor Fundo */
     /* HEXADECIMAL */
     color: var(--cor-texto-padrao);
+    scrol
 }
 
 a {
@@ -463,7 +466,7 @@ h3 {
     transition: ease-in-out .3s;
 }
 
-.accordion-header span, 
+.accordion-header span,
 .accordion-header i {
     color: var(--cor-texto);
 }
@@ -515,7 +518,7 @@ h3 {
     border-bottom: 1px solid var(--cor--menu);
 }
 
-.contato p { 
+.contato p {
     text-align: center;
 }
 
@@ -528,7 +531,7 @@ footer {
 }
 
 footer p {
-    font-size: 12px;
+    font-size: 18px;
     text-align: center;
     padding: 20px;
 }
@@ -537,55 +540,98 @@ footer a {
     color: #48a7f5;
 }
 
+
+/* Form CSS */
+
 .form-contato {
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--cor-texto-padrao);
-    border-radius: 5px;
-    border: 1px solid var(--cor-borda);
-    color: var(--cor-fundo);
+    background: var(--cor-fundo);
     padding: 20px;
-    align-items: center;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 90%;
+    box-shadow: 0 4px 8px var(--cor--menu);
+    /*OPCIONAL*/
+    /* border: ;  OPCIONAL*/
+}
+.form-contato{
+    background-color: var(--cor-btn);
 }
 
+.form-contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 
-.form-name label{
+.form-label {
+    color: var(--cor-fundo);
+    font-weight: bold;
+    font-family: var(--texto);
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.form-group {
     display: flex;
     flex-direction: column;
 }
 
-.form-email label{
-    display: flex;
-    flex-direction: column;
-}
-
-.contato-user{
-    display: none;
-}
-
-.form-grupo {
-    display: flex;
-    flex-direction: column;
-}
-
-.btn-form{
+.form-input,
+.form-textarea {
     width: 100%;
-    display: flex;
-    justify-content: center;
+    padding: 10px;
+    border: 1px solid var(--cor-hover);
+    font-size: 14px;
+    margin-top: 5px;
 }
 
-.btn-form button{
+.form-input:focus,
+.form-textarea:focus {
+    border-color: var(--cor-fundo);
+    outline: none;
+    border-radius: none;
+
+}
+
+.form-input-file {
+    margin-top: 8px;
+    font-size: 15px;
+}
+
+.form-textarea {
+    padding: 5px;
+    font-size: 14px;
+}
+
+
+
+.form-button {
+    
+     display: block;
     width: 100px;
     padding: 5px;
     cursor: pointer;
     font-size: 14px;
-    color: var(--cor-fundo);
+    border: none;
+    /*     color: ;
+    background: ; */
 }
 
+.form-button  {
+    text-align: center;
+    justify-content: center;
+}
 
+.form-button:hover {
+    background: #ccc;
+    transition: ease-in-out .3s;
+}
 
-
+.btn-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
 
 
